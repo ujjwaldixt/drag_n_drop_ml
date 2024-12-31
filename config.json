@@ -1,0 +1,109 @@
+{
+    "types": ["Imports", "Data Cleaners", "Data PreProcessers", "Data Spliters", "Merge Data", "Hyerparameter Tuners", "ML Models", "Outputs"],
+    "Imports": ["Dataset", "Trained Model"],
+    "ML Models": ["Linear Regression", "Logistic Regression", "Decision Tree", "Random Forest"],
+    "Data Spliters": ["Train-Test Split"],
+    "Merge Data": ["Combine Data"],
+    "Hyerparameter Tuners": ["HalvePruning"],
+    "Data Cleaners": ["Remove Column", "Remove Row", "Remove All Null Values"],
+    "Data PreProcessers": ["Standard Scaler", "Min-Max Scaler", "Ordinal Encoder", "One-Hot Encoder"],
+    "Outputs": ["Data", "Model"],
+    "Hirearchy":{
+        "Dataset":[
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest", 
+            "Train-Test Split", "Combine Data", 
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values", "Standard Scaler",
+            "Min-Max Scaler", "Ordinal Encoder", 
+            "One-Hot Encoder", "Data"
+        ],
+        "Trained Model": ["HalvePruning", "Model"],
+        "Linear Regression": ["HalvePruning", "Model"],
+        "Logistic Regression": ["HalvePruning", "Model"], 
+        "Decision Tree": ["HalvePruning", "Model"], 
+        "Random Forest": ["HalvePruning", "Model"],
+        "Train-Test Split":[
+            "Combine Data", "Linear Regression", 
+            "Logistic Regression", "Decision Tree", 
+            "Random Forest", "Data"
+        ],
+        "Combine Data":[
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split", "Remove Column", 
+            "Remove Row", "Remove All Null Values",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Data"
+        ],
+        "HalvePruning":[
+            "Model"
+        ],
+        "Data":[], 
+        "Model":[],
+        "Remove Column": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ],
+        "Remove Row": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ],
+        "Remove All Null Values": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ],
+        "Standard Scaler": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ], 
+        "Min-Max Scaler": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ], 
+        "Ordinal Encoder": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ],
+        "One-Hot Encoder": [
+            "Linear Regression", "Logistic Regression", 
+            "Decision Tree", "Random Forest",
+            "Train-Test Split","Combine Data",
+            "Standard Scaler", "Min-Max Scaler", 
+            "Ordinal Encoder", "One-Hot Encoder",
+            "Remove Column", "Remove Row", 
+            "Remove All Null Values"
+        ]
+    }
+}
