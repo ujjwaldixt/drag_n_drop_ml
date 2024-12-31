@@ -1,0 +1,87 @@
+.App{
+    display: flex;
+    height: 100vh;
+    border: 2px solid  black;
+    margin: .5px;
+    /* grid-template-rows: 20px, 100px;
+    grid-template-columns: 1fr; */
+}
+
+.Workspace{
+    background-color: lightgrey;
+    flex-basis: 80vw;
+    display: grid;
+}
+
+.DeleteComponent{
+    background-color: lightcoral;
+    position: absolute;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.DeleteComponent:hover {
+    background-color: red;
+}
+
+.ToolBox{
+    background-color: darkgray;
+    flex-basis: 20vw;
+
+    overflow-y: scroll; /* Enable vertical scroll if content overflows */
+    border-left: 2px solid  black; /* Optional: Add border for visual separation */
+    font-size: x-small;
+}
+
+
+.Component-Heading{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Component-Content{
+    display: grid;
+    grid-template-columns: repeat(2, 50px); /* Three columns with specified widths */
+    grid-template-rows: repeat(2, 30px); /* Two rows with specified heights */
+    grid-auto-flow: row;
+    /* justify-content: space-between; */
+    column-gap: 60px;
+}
+
+button {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides any overflow text */
+    text-overflow: ellipsis; /* Displays an ellipsis (...) to indicate text overflow */
+}
+
+ul{
+    list-style: none;
+}
+
+.Component-Block {
+    position: absolute;
+    width: 100px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: lightgreen;
+    
+    /* Other styles such as border, border-radius, etc. */
+}
+
+.Component-Block:hover {
+    background-color: rgb(189, 237, 189);
+    cursor: pointer;
+    /* border: 2px solid red; */
+    /* Other styles such as border, border-radius, etc. */
+}
+
+.Component-Block:active {
+    outline: 3px solid red;
+}
+
+.Component-Block:active {
+    outline: 3px solid red;
+}
+
