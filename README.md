@@ -15,8 +15,10 @@
 
 ### Screenshots
 - Startup Screen
-  - 
+  - <img width="1467" alt="image" src="https://github.com/user-attachments/assets/98567ff9-8531-4efe-8b96-f0a4eb3a06f6" />
+
 - A sample model screen
-  -
+  - <img width="1467" alt="image" src="https://github.com/user-attachments/assets/e43c5cff-d4fc-44a9-b7ca-35c1e90dce5b" />
+
 
 
